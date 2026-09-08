@@ -2,6 +2,7 @@
   "version": 2,
   "generated": [
     ".build-manifest.json",
+    "articles/about.html",
     "articles/analysis-test.html",
     "articles/test.html",
     "articles/模考函数.html",
@@ -15,6 +16,14 @@
     "tag/index.html"
   ],
   "articles": {
+    "about": {
+      "hash": "914a49e3f142bd11131da1b620c9d1d540ce9dbc8752ba28f91771d57e51a823",
+      "dependencies": {
+        "articles/about.typ": "914a49e3f142bd11131da1b620c9d1d540ce9dbc8752ba28f91771d57e51a823"
+      },
+      "cache": "about.html",
+      "cache_hash": "0c84d48c6333a5038aa275600b1b14bcc3e249ac59303dbc15e72727aaed2f58"
+    },
     "analysis-test": {
       "hash": "95c7d3a018d9b5933eff9c070421356bcab487dd461ee334346106d2853a88c4",
       "dependencies": {
@@ -90,7 +99,7 @@
       "cache_hash": "808c269ccc951fc7f9d3963a47a1533363385bbcf3fefb6f428278707e5bfcb7"
     },
     "test": {
-      "hash": "4cc022b559230cf66fded8800f6143b9c1b2d5499d1cbbd03a7eb9a9a1942403",
+      "hash": "7baf6be392af55780741d3ccce943d433419212bc07686018b94954c36f85edc",
       "dependencies": {
         "C:/Users/selen/AppData/Local/typst/packages/preview/cetz/0.5.2/cetz-core/cetz_core.wasm": "836ee089fa23d43fe72ee3d062462846914627581c8ba6faad344eb1ccc4e4cb",
         "C:/Users/selen/AppData/Local/typst/packages/preview/cetz/0.5.2/src/aabb.typ": "c7cf8aedcfd79c519da30426529a9fbbb98c7b15bc83ad2dcf9c962ef58da00f",
@@ -157,7 +166,7 @@
         "C:/Users/selen/AppData/Local/typst/packages/preview/theorion/0.6.0/typst.toml": "b5b535136edd7e30ed738ea14a1aa1b1141cffbedb55bffe03f7e22a4baaf947",
         "C:/Users/selen/AppData/Local/typst/packages/preview/wrap-it/0.1.1/typst.toml": "e75748d0dca5d23dc6738b1ce87fe9d7c6cb03bbdfc3ebab1584eb145b5808e1",
         "C:/Users/selen/AppData/Local/typst/packages/preview/wrap-it/0.1.1/wrap-it.typ": "dc5eb1f1436f3c6086595c4f5bcf58e52d0062e3c752356bca4dfcc99c2705a3",
-        "articles/test.typ": "4cc022b559230cf66fded8800f6143b9c1b2d5499d1cbbd03a7eb9a9a1942403",
+        "articles/test.typ": "7baf6be392af55780741d3ccce943d433419212bc07686018b94954c36f85edc",
         "site/typst/blog.typ": "8a4e1a2128dc9436910e2093ca0a31e6764ced29fa8c7bc0e913cd300a71fdd1"
       },
       "cache": "test.html",
