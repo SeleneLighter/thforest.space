@@ -94,7 +94,7 @@ a { color: inherit; }
 .category-card:hover, .category-link:focus-visible .category-card, .tag-card:hover, .tag-link:focus-visible .tag-card { border-color: var(--accent-blue-dim); box-shadow: 0 10px 30px var(--bg-dim); transform: translateY(-4px); }
 .category-card__icon, .tag-card__icon { color: var(--accent-orange); font-size: 1.8rem; }
 .category-card__content, .tag-card__content { min-width: 0; flex-grow: 1; }
-.category-card__content h3, .tag-card__content h3 { margin: 0; overflow-wrap: anywhere; font-size: 1.05rem; }
+.category-card__content h3, .tag-card__content h3 { margin: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 1.05rem; }
 .category-card__content span, .tag-card__content span { color: var(--fg-dim); font-size: .85rem; }
 .category-card__arrow, .tag-card__arrow { color: var(--accent-blue); }
 
@@ -156,11 +156,14 @@ a { color: inherit; }
 .theorion--tip { color: var(--accent-green); }
 .theorion--note { color: var(--accent-blue); }
 .theorion--proof { position: relative; color: var(--fg); }
+.theorion--proof .theorion__title { font-style: italic; font-weight: 700; }
 .theorion--proof::after { content: ""; position: absolute; right: 0; bottom: 0; width: .8em; height: .8em; background: currentColor; border-radius: 2px; }
 
 @media (max-width: 900px) {
   body { display: block; }
-  .sidebar { position: relative; width: 100%; height: auto; padding: 40px 20px; border-right: 0; border-bottom: 1px solid var(--bg-alt); }
+  .sidebar { position: relative; align-items: center; width: 100%; height: auto; padding: 40px 20px; text-align: center; border-right: 0; border-bottom: 1px solid var(--bg-alt); }
+  .profile, .nav-menu { width: 100%; max-width: 320px; }
+  .profile__name, .profile__socials, .nav-item { justify-content: center; }
   .main-content { padding: 40px 20px; }
   .content-header { align-items: stretch; flex-direction: column; gap: 1rem; }
   .search-bar { width: 100%; }
