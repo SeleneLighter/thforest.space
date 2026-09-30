@@ -113,13 +113,15 @@ a { color: inherit; }
 .meta-container .tag:nth-child(4n + 4) { color: var(--accent-orange); }
 .meta-container .tag::before { content: "#"; }
 .meta-container .tag:hover { cursor: pointer; filter: brightness(1.2); transform: scale(1.05); }
-.article-body { min-width: 0; }
+.article-body { min-width: 0; line-height: 2.1; }
 .article-body p { margin: 1rem 0; }
-.article-body strong { color: var(--accent-blue); }
+.article-body strong { color: inherit; font-weight: bold; }
 .article-body h2, .article-body h3, .article-body h4 { margin-top: 2rem; color: var(--accent-red); font-weight: bold; }
-.article-body ul, .article-body ol { margin-left: 1.5rem; }
+.article-body ul, .article-body ol { margin: .75rem 0; padding-left: 1.5rem; }
 .article-body ol li::marker { content: "(" counter(list-item) ") "; }
-.article-body li { padding: .7rem 0; }
+.article-body li { margin: .25rem 0; padding: 0; }
+.article-body li > p { margin: .25rem 0; }
+.article-body li > ul, .article-body li > ol { margin: .25rem 0; }
 .article-body a { color: var(--accent-blue); text-decoration: underline; }
 .article-body a:visited { color: var(--accent-purple); }
 .article-body a:hover, .article-body a:focus { text-decoration: none; filter: brightness(1.05); outline: none; }
