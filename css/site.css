@@ -133,12 +133,12 @@ a { color: inherit; }
 .typst-frame { max-width: 100%; height: auto; color: inherit; vertical-align: middle; }
 .typst-frame [fill="#000000"] { fill: currentColor; }
 .typst-frame [stroke="#000000"] { stroke: currentColor; }
-.cetz-diagram { display: flex; align-items: center; justify-content: center; width: 100%; max-width: 100%; min-width: 0; margin: 1rem auto; overflow-x: auto; overflow-y: hidden; text-align: center; }
-.cetz-diagram svg { max-width: 100%; height: auto; }
-.cetz-diagram svg * { vector-effect: non-scaling-stroke; stroke-linecap: round; stroke-linejoin: round; }
-.cetz-diagram svg, .wrap-content__fixed svg { color: inherit; }
-.cetz-diagram svg [fill="#000000"], .wrap-content__fixed svg [fill="#000000"] { fill: currentColor; }
-.cetz-diagram svg [stroke="#000000"], .wrap-content__fixed svg [stroke="#000000"] { stroke: currentColor; }
+.cetz-diagram, .fletcher-diagram { display: flex; align-items: center; justify-content: center; width: 100%; max-width: 100%; min-width: 0; margin: 1rem auto; overflow-x: auto; overflow-y: hidden; text-align: center; }
+.cetz-diagram svg, .fletcher-diagram svg { max-width: 100%; height: auto; }
+.cetz-diagram svg *, .fletcher-diagram svg * { vector-effect: non-scaling-stroke; stroke-linecap: round; stroke-linejoin: round; }
+.cetz-diagram svg, .fletcher-diagram svg, .wrap-content__fixed svg { color: inherit; }
+.cetz-diagram svg [fill="#000000"], .fletcher-diagram svg [fill="#000000"], .wrap-content__fixed svg [fill="#000000"] { fill: currentColor; }
+.cetz-diagram svg [stroke="#000000"], .fletcher-diagram svg [stroke="#000000"], .wrap-content__fixed svg [stroke="#000000"] { stroke: currentColor; }
 .wrap-content { display: grid; grid-template-columns: minmax(0, 45%) minmax(0, 1fr); align-items: stretch; gap: 1em; width: 100%; min-width: 0; margin: 1rem 0; overflow: hidden; }
 .wrap-content__fixed { display: flex; align-items: center; justify-content: center; min-width: 0; min-height: 0; overflow: hidden; }
 .wrap-content__fixed img, .wrap-content__fixed svg { display: block; width: 100% !important; height: 100% !important; max-width: 100%; max-height: 100%; object-fit: contain; }
@@ -147,7 +147,7 @@ a { color: inherit; }
 .theorion { min-width: 0; margin-top: 2rem; margin-bottom: 2rem; }
 .theorion .theorion__title { margin: 0 0 .5rem; font-weight: 700; }
 .theorion .theorion__body { margin: 0; }
-.theorion--definition { color: var(--accent-red); }
+.theorion--definition, .theorion--warning { color: var(--accent-red); }
 .theorion--theorem { color: var(--accent-blue); }
 .theorion--proposition, .theorion--corollary { color: var(--accent-green); }
 .theorion--lemma { color: var(--accent-green-dim); }
